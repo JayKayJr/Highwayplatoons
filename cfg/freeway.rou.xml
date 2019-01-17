@@ -1,0 +1,10 @@
+<routes>
+	<vType id="vtypeauto" accel="1.5" decel="8" sigma="0.5" length="4" minGap="1" maxSpeed="100" color="1,0,0" probability="1" speedFactor="1000">
+		<carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="2.5" lanesCount="4" ccAccel="1.5"/>
+	</vType>
+	<vType id="vtypeloner" accel="1.5" decel="8" sigma="0.5" length="4" minGap="1" maxSpeed="100" color="1,0,0" probability="1" speedFactor="1000">
+	<carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="2.5" lanesCount="4" ccAccel="1.5"/>
+	</vType>
+    <route id="platoon_route" edges="s1 1 2 3 4 5 6 7 8  9 10 e4 exit4" />
+    <route id="loner" edges="0 1 2 3 4 5 6 7 e31 e32" vType = "vtypeloner"/>
+</routes>
