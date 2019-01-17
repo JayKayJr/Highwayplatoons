@@ -419,6 +419,8 @@ def it_is_safe_to_change_lane(vehicle, lane_id, safe_gap):
     :return: True if it is safe to change lane, False otherwise
     :rtype: bool
     """
+    ##
+
     vehicles_in_lane = traci.lane.getLastStepVehicleIDs(lane_id)
 
     for v in vehicles_in_lane:
